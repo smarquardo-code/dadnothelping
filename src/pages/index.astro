@@ -1,0 +1,50 @@
+---
+const title = "Dad, You're Not Helping! | Coming Soon";
+const description = "A dad and his teenage son tackle everyday life, generational differences, and the moments when Dad's advice isn't quite as helpful as he thinks.";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15191f" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://dadnothelping.com/images/podcast-cover.png" />
+    <title>{title}</title>
+    <link rel="icon" type="image/png" href="/images/podcast-cover.png" />
+    <style>
+      :root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #f6f7fa; background: #15191f; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 50% 0%, #26394a 0%, #15191f 55%); }
+      main { width: min(100% - 36px, 780px); margin: 0 auto; padding: 48px 0 32px; text-align: center; }
+      .cover { display: block; width: min(100%, 470px); height: auto; margin: 0 auto 30px; border-radius: 12px; box-shadow: 0 18px 55px #0008; }
+      .badge { display: inline-block; background: #ff9819; color: #161616; padding: 9px 19px; border-radius: 999px; font-size: .8rem; font-weight: 850; letter-spacing: .16em; }
+      h1 { margin: 22px 0 12px; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.08; letter-spacing: -.045em; }
+      .tagline { color: #e1e7ed; font-size: clamp(1.04rem, 2.8vw, 1.3rem); margin: 0 auto 48px; }
+      .about { border-top: 1px solid #45505c; padding: 36px 0 28px; }
+      h2 { color: #25bdf5; font-size: clamp(1.45rem, 4vw, 2rem); margin: 0 0 20px; }
+      p { color: #d7dce2; font-size: 1.06rem; line-height: 1.75; max-width: 650px; margin: 0 auto 15px; }
+      .signoff { color: #ff9819; font-weight: 700; margin-top: 24px; }
+      footer { color: #8e98a4; border-top: 1px solid #323b46; padding: 25px 0 0; font-size: .83rem; }
+      @media (max-width: 560px) { main { padding-top: 24px; } .cover { width: min(100%, 390px); } .tagline { margin-bottom: 34px; } .about { padding-top: 30px; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="cover" src="/images/podcast-cover.png" alt="Dad, You're Not Helping podcast artwork featuring Dad and Teen mugs and a microphone" width="1248" height="1248" />
+      <span class="badge">COMING SOON</span>
+      <h1>Dad, You're Not Helping!</h1>
+      <p class="tagline">Two generations. Two perspectives. One microphone.</p>
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title">What's this all about?</h2>
+        <p>Being a teenager isn't easy. Neither is raising one.</p>
+        <p>Join a dad and his teenage son as they tackle everyday life, generational differences, and the moments when Dad's advice isn't quite as helpful as he thinks.</p>
+        <p class="signoff">Different perspectives. Plenty of laughs. No instruction manual.</p>
+      </section>
+      <footer>© {new Date().getFullYear()} Dad, You're Not Helping! · dadnothelping.com</footer>
+    </main>
+  </body>
+</html>
